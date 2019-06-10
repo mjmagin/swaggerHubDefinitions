@@ -2527,6 +2527,8 @@ paths:
                     type: string
                   Surname:
                     type: string
+                  fullName:
+                    type: string
               sessionToken:
                 type: string
               requestedMethod:
