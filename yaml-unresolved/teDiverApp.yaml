@@ -2365,10 +2365,10 @@ paths:
         default:
           description: Failed Server Response
   
-  /umCreateUser.json/:
+  /umCreateNavUser.json/:
     post:
-      summary: To create a user in HUB called from ELITE system
-      description: To create a user in HUB  called from ELITE system
+      summary: To create a user in HUB called from NAV system
+      description: To create a user in HUB  called from NAV system
       tags:
         - 0. User Management
       consumes:
