@@ -2365,10 +2365,10 @@ paths:
         default:
           description: Failed Server Response
   
-  /umCreateNavUser.json/:
+  /umCreateUser.json/:
     post:
-      summary: To create a nav user in HUB called from NAV system
-      description: To create a nav user in HUB  called from NAV system
+      summary: To create a user in HUB called from ELITE system
+      description: To create a user in HUB  called from ELITE system
       tags:
         - 0. User Management
       consumes:
@@ -2385,16 +2385,6 @@ paths:
           description: backendIdentifier
           required: true
         - in: formData
-          name: params[navUserName]
-          type: string
-          description: navUserName 
-          required: true
-        - in: formData
-          name: params[navServiceKey]
-          type: string
-          description: navServiceKey
-          required: true
-        - in: formData
           name: params[firstName]
           type: string
           description: firstName
@@ -2406,6 +2396,14 @@ paths:
           name: params[jwtExpiryTime]
           type: string
           description: user jwt expiry time
+        - in: formData
+          name: params[clientIdentifier]
+          type: string
+          description: clientIdentifier
+        - in: formData
+          name: params[accountNo]
+          type: string
+          description: user accountNo
         
       responses:
         200:
