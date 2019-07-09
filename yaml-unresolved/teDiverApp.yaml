@@ -1247,6 +1247,8 @@ paths:
                       type: string
                     tourEndLocation:
                       type: string
+                    tourCount:
+                      type: string
                     jobs:
                       type: array
                       items:
