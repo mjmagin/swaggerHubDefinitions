@@ -1466,6 +1466,14 @@ paths:
                                 type: string
                               checkRequirement:
                                 type: string
+                              defectNumber:
+                                type: string
+                              repairerName:
+                                type: string
+                              repairerSignature:
+                                type: string
+                              repairDateTime:
+                                type: string
                             
                     eodVC:
                       type: object
@@ -1522,6 +1530,14 @@ paths:
                               classification:
                                 type: string
                               checkRequirement:
+                                type: string
+                              defectNumber:
+                                type: string
+                              repairerName:
+                                type: string
+                              repairerSignature:
+                                type: string
+                              repairDateTime:
                                 type: string
               sessionToken:
                 type: string
