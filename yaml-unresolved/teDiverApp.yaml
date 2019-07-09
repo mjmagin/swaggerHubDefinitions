@@ -1215,52 +1215,44 @@ paths:
                   properties:
                     driverEmail:
                       type: string
-                    tourNo:
-                      type: string
                     tourDescription:
                       type: string
-                    tourScheduledDate: 
+                    tourScheduledDate:
                       type: string
                     tourVehicleReg:
                       type: string
                     tourStartMileage:
                       type: string
-                    tourEndMileage: 
+                    tourEndMileage:
                       type: string
-                    tourBackendID: 
+                    tourBackendID:
                       type: string
                     tourUserID:
                       type: string
-                    drTourID: 
+                    drTourID:
                       type: string
-                    timeCreated: 
+                    timeCreated:
                       type: string
-                    timeUpdated: 
+                    timeUpdated:
                       type: string
                     tourStatus:
                       type: string
                     tourBackendLastUpdate:
                       type: string
-                    vehicleCheckRequired:
+                    tourNo:
                       type: string
-                    ScheduleStatus:
+                    instanceID:
                       type: string
-                    totalJobs:
-                      type: integer
-                    countCurrent:
-                      type: integer
-                    countOverdue:
-                      type: integer
-                    countFuture:
-                      type: integer
+                    tourStartLocation:
+                      type: string
+                    tourEndLocation:
+                      type: string
                     jobs:
                       type: array
                       items:
                         type: object
                         properties:
                           sequenceNo:
-                            type: string
-                          orderNo:
                             type: string
                           jobStatus:
                             type: string
@@ -1294,9 +1286,7 @@ paths:
                             type: string
                           combinedAddress:
                             type: string
-                          alertsExist:
-                            type: string
-                          commentsExist:
+                          orderNo:
                             type: string
                           serviceLines: 
                             type: array
@@ -1418,6 +1408,121 @@ paths:
                                   type: string
                                 driverAppAlert:
                                   type: string
+                    totalJobs:
+                      type: number
+                    sodVC:
+                      type: object
+                      properties:
+                        scheduledDate:
+                          type: string
+                        vehicleReg:
+                          type: string
+                        drVehicleCheckID:
+                          type: string
+                        timeCreated:
+                          type: string
+                        timeUpdated:
+                          type: string
+                        driverName:
+                          type: string
+                        driverSignature: 
+                          type: string
+                        checkStatus:
+                          type: string
+                        instanceID:
+                          type: string
+                        type:
+                          type: string
+                        tourID:
+                          type: string
+                        items:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              drVehicleCheckItemID:
+                                type: string
+                              timeCreated:
+                                type: string
+                              timeUpdated:
+                                type: string
+                              checkDescription:
+                                type: string
+                              checkComments:
+                                type: string
+                              vehicleCheck:
+                                type: string
+                              checkAnswer:
+                                type: string
+                              responseRequired:
+                                type: string
+                              lineNo:
+                                type: string
+                              checkValue:
+                                type: string
+                              templateNo:
+                                type: string
+                              classification:
+                                type: string
+                              checkRequirement:
+                                type: string
+                            
+                    eodVC:
+                      type: object
+                      properties:
+                        scheduledDate:
+                          type: string
+                        vehicleReg:
+                          type: string
+                        drVehicleCheckID:
+                          type: string
+                        timeCreated:
+                          type: string
+                        timeUpdated:
+                          type: string
+                        driverName:
+                          type: string
+                        driverSignature: 
+                          type: string
+                        checkStatus:
+                          type: string
+                        instanceID:
+                          type: string
+                        type:
+                          type: string
+                        tourID:
+                          type: string
+                        items:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              drVehicleCheckItemID:
+                                type: string
+                              timeCreated:
+                                type: string
+                              timeUpdated:
+                                type: string
+                              checkDescription:
+                                type: string
+                              checkComments:
+                                type: string
+                              vehicleCheck:
+                                type: string
+                              checkAnswer:
+                                type: string
+                              responseRequired:
+                                type: string
+                              lineNo:
+                                type: string
+                              checkValue:
+                                type: string
+                              templateNo:
+                                type: string
+                              classification:
+                                type: string
+                              checkRequirement:
+                                type: string
               sessionToken:
                 type: string
               requestedMethod:
