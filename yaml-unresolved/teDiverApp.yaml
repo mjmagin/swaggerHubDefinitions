@@ -1433,7 +1433,7 @@ paths:
                           type: string
                         instanceID:
                           type: string
-                        type:
+                        vctype:
                           type: string
                         tourID:
                           type: string
@@ -1498,7 +1498,7 @@ paths:
                           type: string
                         instanceID:
                           type: string
-                        type:
+                        vctype:
                           type: string
                         tourID:
                           type: string
