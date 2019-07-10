@@ -1437,7 +1437,7 @@ paths:
                           type: string
                         tourID:
                           type: string
-                        items:
+                        vcItems:
                           type: array
                           items:
                             type: object
@@ -1502,7 +1502,7 @@ paths:
                           type: string
                         tourID:
                           type: string
-                        items:
+                        vcItems:
                           type: array
                           items:
                             type: object
