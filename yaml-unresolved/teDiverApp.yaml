@@ -1476,6 +1476,21 @@ paths:
                                 type: string
                               repairDateTime:
                                 type: string
+                              VehicleCheckItemPhotos:
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    checkItemPhoto: 
+                                      type: string
+                                    vehicleCheckItem:
+                                      type: string
+                                    drVehicleCheckItemPhotoID: 
+                                      type: string
+                                    timeCreated: 
+                                      type: string
+                                    timeUpdated: 
+                                      type: string
                             
                     eodVC:
                       type: object
@@ -1541,6 +1556,21 @@ paths:
                                 type: string
                               repairDateTime:
                                 type: string
+                              VehicleCheckItemPhotos:
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    checkItemPhoto: 
+                                      type: string
+                                    vehicleCheckItem:
+                                      type: string
+                                    drVehicleCheckItemPhotoID: 
+                                      type: string
+                                    timeCreated: 
+                                      type: string
+                                    timeUpdated: 
+                                      type: string
               sessionToken:
                 type: string
               requestedMethod:
