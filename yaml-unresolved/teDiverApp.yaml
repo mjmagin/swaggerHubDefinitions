@@ -1152,6 +1152,11 @@ paths:
           type: string
           description: latitude
           required: false
+        - in: formData
+          name: params[tourStartLocation]
+          type: string
+          description: tourStartLocation
+          required: false
         
       responses:
         200:
