@@ -56,9 +56,7 @@ paths:
                 items:
                   type: object
                   properties:
-                    licensePlateNumber:
-                      type: string
-                    vehicleNo:
+                    code:
                       type: string
                     description:
                       type: string
