@@ -2807,7 +2807,9 @@ paths:
                         User_Security_ID_FilterOnly: 
                           type: string
                         Enwis_App_FilterOnly: 
-                          type: string    
+                          type: string   
+                        read:
+                          type: string
               sessionToken:
                 type: string
               requestedMethod:
