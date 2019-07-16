@@ -2741,7 +2741,7 @@ paths:
                 type: string
                 format: double
   
-  /fmGetNotificationsNew.json/:
+  /umGetNotificationsNew.json/:
     post:
       summary: get Notifications New
       description: get Notifications New
