@@ -2776,6 +2776,8 @@ paths:
                 items:
                   type: object
                   properties: 
+                    count:
+                      type: integer
                     Notification_Detail: 
                       type: string
                     Created_Date:
