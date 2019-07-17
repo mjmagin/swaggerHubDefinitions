@@ -21,6 +21,69 @@ security:
 
 paths:
 
+   /umUpdateNotification.json/:
+    post:
+      summary: Update  Notification Status
+      description: Update  Notification Status
+      tags:
+        - 0. User Management
+      consumes:
+        - application/x-www-form-urlencoded
+      parameters:
+        - in: formData
+          name: params[jwt]
+          type: string
+          description: jwt
+          required: true
+        - in: formData
+          name: params[clientIdentifier]
+          type: string
+          description: clientIdentifier
+          required: true
+        - in: formData
+          name: params[status]
+          type: string
+          required: true
+          description: New Status
+        - in: formData
+          name: params[entry_no]
+          type: integer
+          description: entry_no
+          required: true
+        
+      responses:
+        200:
+          description: Return a standard response format for JSONRPC - if responseCode in this response is a success (1). Any other response code is an error.
+          schema:
+            type: object
+            properties:
+              responseCode:
+                type: integer
+              responseMessage:
+                type: string
+              payload:
+                type: object
+                properties:
+                  Request_Status:
+                      type: string
+              sessionToken:
+                type: string
+              requestedMethod:
+                type: string
+              requestedFormat:
+                type: string
+              timestamp:
+                type: string
+                format: time
+              requestReceivedTime:
+                type: string
+                format: time
+              maxAllowedRequestTime:
+                type: integer 
+              requestProcessingTime:
+                type: string
+                format: double
+  
   /drGetReasonCodes.json/:
     post:
       summary: drGetReasonCodes
