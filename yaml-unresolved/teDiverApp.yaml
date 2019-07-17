@@ -21,7 +21,7 @@ security:
 
 paths:
 
-   /umUpdateNotification.json/:
+  /umUpdateNotification.json/:
     post:
       summary: Update  Notification Status
       description: Update  Notification Status
