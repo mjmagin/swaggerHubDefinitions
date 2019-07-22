@@ -187,6 +187,8 @@ paths:
                       type: string
                     description:
                       type: string
+                    vehicleStatus:
+                      type: string
               sessionToken:
                 type: string
               requestedMethod:
