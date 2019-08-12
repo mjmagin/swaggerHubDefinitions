@@ -1304,6 +1304,11 @@ paths:
           type: string
           description: vehicleCheckID
           required: false
+        - in: formData
+          name: params[defectNumber]
+          type: string
+          description: defectNumber
+          required: false
         
       responses:
         200:
