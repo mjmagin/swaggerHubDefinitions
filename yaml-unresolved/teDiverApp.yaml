@@ -1255,9 +1255,9 @@ paths:
           description: clientIdentifier
           required: true
         - in: formData
-          name: params[vehicleChecksData]
+          name: params[checkItemData]
           type: string
-          description: vehicleChecksData array
+          description: checkItemData Structure
           required: false
         - in: formData
           name: params[localDateTimeStamp]
@@ -1275,9 +1275,24 @@ paths:
           description: latitude
           required: false
         - in: formData
-          name: params[tourStatus]
+          name: params[tourID]
           type: string
-          description: tourStatus
+          description: tourID
+          required: false
+        - in: formData
+          name: params[vcType]
+          type: string
+          description: vcType
+          required: false
+        - in: formData
+          name: params[vehicleReg]
+          type: string
+          description: vehicleReg
+          required: false
+        - in: formData
+          name: params[tourNo]
+          type: string
+          description: ttourNo
           required: false
         
       responses:
