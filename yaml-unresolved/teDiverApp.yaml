@@ -1292,7 +1292,12 @@ paths:
         - in: formData
           name: params[tourNo]
           type: string
-          description: ttourNo
+          description: tourNo
+          required: false
+        - in: formData
+          name: params[defectNotes]
+          type: string
+          description: defectNotes
           required: false
         
       responses:
