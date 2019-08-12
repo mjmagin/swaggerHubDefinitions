@@ -1255,9 +1255,9 @@ paths:
           description: clientIdentifier
           required: true
         - in: formData
-          name: params[checkItemData]
+          name: params[photosArrayData]
           type: string
-          description: checkItemData Structure
+          description: photosArrayData
           required: false
         - in: formData
           name: params[localDateTimeStamp]
